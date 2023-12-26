@@ -11,6 +11,7 @@ import { StylesProvider, createGenerateClassName } from "@material-ui/core";
 // So that classnames doesn't collide with other sub project
 const generateClassName = createGenerateClassName({
   productionPrefix: "co",
+  seed: "c--",
 });
 
 export default () => {
