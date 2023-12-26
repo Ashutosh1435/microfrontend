@@ -1,6 +1,5 @@
 import React from "react";
-import Button from "@material-ui/core/Button";
-import { Router, Switch, Route, Link } from "react-router-dom";
+import { Router, Switch, Route } from "react-router-dom";
 import { StylesProvider, createGenerateClassName } from "@material-ui/core";
 
 import Signin from "./components/Signin";
@@ -15,11 +14,6 @@ export default ({ history, onSignIn }) => {
   return (
     <StylesProvider generateClassName={generateClassName}>
       <Router history={history}>
-        {/* <Link to="/auth/signin">
-          <Button variant="outlined" color="primary">
-            Pricing
-          </Button>
-        </Link> */}
         <Switch>
           <Route path="/auth/signin">
             <Signin onSignIn={onSignIn} />
