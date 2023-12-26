@@ -10,7 +10,7 @@ import { StylesProvider, createGenerateClassName } from "@material-ui/core";
 // for adding prefix in production class names
 // So that classnames doesn't collide with other sub project
 const generateClassName = createGenerateClassName({
-  productionPrefix: "ma",
+  productionPrefix: "co",
 });
 
 export default () => {
