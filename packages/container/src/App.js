@@ -16,8 +16,8 @@ const generateClassName = createGenerateClassName({
 export default () => {
   const [isSignedIn, setIsSignedIn] = useState(false);
   return (
-    <BrowserRouter>
-      <StylesProvider generateClassName={generateClassName}>
+    <StylesProvider generateClassName={generateClassName}>
+      <BrowserRouter>
         <div>
           <Header
             onSignOut={() => setIsSignedIn(false)}
@@ -33,7 +33,7 @@ export default () => {
             </Switch>
           </Suspense>
         </div>
-      </StylesProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </StylesProvider>
   );
 };
