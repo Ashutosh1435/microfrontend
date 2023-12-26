@@ -20,6 +20,7 @@ const devConfig = {
       name: "container",
       remotes: {
         marketing: "marketing@http://localhost:8081/remoteEntry.js",
+        auth: "auth@http://localhost:8082/remoteEntry.js",
       },
       // shared option is added for sharing the common modules,
       // to optimize performance of application
