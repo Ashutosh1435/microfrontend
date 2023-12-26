@@ -1,5 +1,5 @@
-import React from 'react';
-import  ReactDOM   from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 import { createMemoryHistory, createBrowserHistory } from "history";
 import App from "./App";
 
@@ -23,11 +23,13 @@ const mount = (el, { onNavigate, defaultHistory }) => {
 // And if we're in development or isolation
 // call mount immediately
 if (process.env.NODE_ENV === "development") {
-  const elem = document.querySelector("#_marketing-dev-root");
+  const elem = document.querySelector("#_auth-dev-root");
 
-  if (elem) mount(elem, { defaultHistory: createBrowserHistory() });
+  if (elem) {
+    mount(elem, { defaultHistory: createBrowserHistory() });
+  }
 }
 
 // we are running the container
 // And we should export the mount function
-export {mount};
+export { mount };
